@@ -1,0 +1,30 @@
+version: '3'
+services:
+  movies:
+    image: siva995912345/movies:latest
+    ports:
+      - "44:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: siva995912345/train:latest
+    ports:
+      - "55:80"
+    deploy:
+      replicas: 3
+
+  dth:
+    image: siva995912345/dth:latest
+    ports:
+      - "66:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: siva995912345/recharge:latest
+    ports:
+      - "77:80"
+    deploy:
+      replicas: 3
+
